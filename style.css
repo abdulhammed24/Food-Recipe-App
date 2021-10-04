@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow&display=swap');
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header-text {
+    font-size: 3.2rem;
+}
+
+.active-header-text {
+    font-size: 2rem;
+}
+
+body {
+    font-family: 'Barlow', sans-serif;
+    min-height: 100vh;
+    width: 80%;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.header {
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.header-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    text-align: center;
+}
+
+form {
+    width: 500px;
+    margin: 15px 0;
+    background: #EEF9F8;
+    border-radius: 10px;
+    max-width: 100%;
+    height: 60px;
+    display: flex;
+    flex-direction: row;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
+    justify-content: center;
+    align-items: center;
+}
+
+input {
+    font-size: 18px;
+    background: #EEF9F8;
+    border-radius: 10px;
+    height: 60px;
+    margin: 0 20px;
+    width: 500px;
+    max-width: 100%;
+    border: none;
+    outline: none;
+    caret-color: #112C41;
+}
+
+.input-icon {
+    max-height: 30px;
+    margin: 0 20px 0 0;
+    cursor: pointer;
+}
+
+.result {
+    display: grid;
+    grid-gap: 20px;
+    grid-template: auto/repeat(auto-fit, minmax(300px, 1fr));
+    margin: 20px 0;
+}
+
+.result-container {
+    background: #EEF9F8;
+    border-radius: 10px;
+    padding: 15px;
+}
+
+.result-name {
+    font-size: 1.2rem;
+}
+
+.result-img {
+    height: 300px;
+    width: 100%;
+    object-fit: fill;
+    border-radius: 10px;
+}
+
+.result-details {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 20px 0;
+}
+
+.view-result {
+    text-decoration: none;
+    color: red;
+    background: #05596B;
+    box-shadow: 0px 4px 20px rgb(0 0 0 / 10%);
+    border-radius: 6px;
+    border: 1px solid #05596b;
+    padding: 10px 0;
+    margin-left: 25px;
+    color: #46F7AD;
+    font-size: 14px;
+    letter-spacing: 1.2px;
+    font-weight: 600;
+    min-width: 35%;
+    text-align: center;
+    transition: background 0.5s ease-out;
+}
+
+.view-result:hover {
+    background: #fff;
+    color: #05596b;
+}
+
+@media (max-width:768px) {
+    .view-result {
+        min-width: 40%;
+    }
+    .header-text {
+        font-size: 2rem;
+    }
+    input {
+        font-size: 13px;
+    }
+}
