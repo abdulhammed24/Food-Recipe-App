@@ -65,11 +65,12 @@ input {
     caret-color: #112C41;
 }
 
-.input-icon {
+
+/* .input-icon {
     max-height: 30px;
     margin: 0 20px 0 0;
     cursor: pointer;
-}
+} */
 
 .result {
     display: grid;
@@ -132,6 +133,9 @@ input {
     .header-text {
         font-size: 2rem;
     }
+}
+
+@media (max-width:480px) {
     input {
         font-size: 13px;
     }
